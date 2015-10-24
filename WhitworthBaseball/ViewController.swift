@@ -10,25 +10,22 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
  //Properties
-    @IBOutlet weak var QueryChoices: UIPickerView!
+   
+    @IBOutlet weak var PickQuery: UIPickerView!
     @IBOutlet weak var DisplayQuery: UITableView!
     @IBOutlet weak var SubmitQuery: UIButton!
     
     // Declaring a new array to hold choice and allow access to
     //outside functions
-    var PickerData:[String] = [String]()
+    var PickerData = ["Query 1", "Query 2", "Query 3", "Query 4", "Query 5"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         // connect data
-        self.QueryChoices.delegate = self
-        self.QueryChoices.dataSource = self
-        
-        
-        // Input data into the Array:
-        
-        PickerData = ["Query 1", "Query 2", "Query 3", "Query 4", "Query 5"]
+        PickQuery.delegate = self
+        PickQuery.dataSource = self
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -52,14 +49,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     // Capture the picker view selection
-    //func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
       
-    //}
+    }
     
-    
-    
-    
-
 
 }
 
