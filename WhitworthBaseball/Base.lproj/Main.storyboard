@@ -17,19 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-AY-CEw">
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-AY-CEw">
                                 <rect key="frame" x="28" y="39" width="545" height="204"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="9IK-59-nj5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zUK-D2-wfj"/>
                                 </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.031111900250000001" green="0.0053313061989999997" blue="0.0028258475509999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="nsA-dt-cb8"/>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qsQ-uO-FQQ"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="PickQuery" destination="gI4-AY-CEw" id="fYW-ei-iYO"/>

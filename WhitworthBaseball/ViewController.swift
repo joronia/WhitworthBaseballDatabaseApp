@@ -47,10 +47,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     // Capture the picker view selection
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    //func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
       
-    }
+    //}
     
 
 }
