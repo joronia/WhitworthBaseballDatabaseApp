@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		845DCDF71BDB13C00070501E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DCDF61BDB13C00070501E /* AppDelegate.swift */; };
+		845DCDF91BDB13C00070501E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DCDF81BDB13C00070501E /* ViewController.swift */; };
+		845DCDFC1BDB13C10070501E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845DCDFA1BDB13C10070501E /* Main.storyboard */; };
+		845DCDFE1BDB13C10070501E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845DCDFD1BDB13C10070501E /* Assets.xcassets */; };
+		845DCE011BDB13C10070501E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845DCDFF1BDB13C10070501E /* LaunchScreen.storyboard */; };
+		845DCE0C1BDB13C10070501E /* WhitworthBaseballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DCE0B1BDB13C10070501E /* WhitworthBaseballTests.swift */; };
+		845DCE171BDB13C10070501E /* WhitworthBaseballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DCE161BDB13C10070501E /* WhitworthBaseballUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		845DCE081BDB13C10070501E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845DCDEB1BDB13C00070501E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845DCDF21BDB13C00070501E;
+			remoteInfo = WhitworthBaseball;
+		};
+		845DCE131BDB13C10070501E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845DCDEB1BDB13C00070501E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845DCDF21BDB13C00070501E;
+			remoteInfo = WhitworthBaseball;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		845DCDF31BDB13C00070501E /* WhitworthBaseball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhitworthBaseball.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845DCDF61BDB13C00070501E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		845DCDF81BDB13C00070501E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		845DCDFB1BDB13C10070501E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		845DCDFD1BDB13C10070501E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845DCE001BDB13C10070501E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		845DCE021BDB13C10070501E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845DCE071BDB13C10070501E /* WhitworthBaseballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitworthBaseballTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845DCE0B1BDB13C10070501E /* WhitworthBaseballTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitworthBaseballTests.swift; sourceTree = "<group>"; };
+		845DCE0D1BDB13C10070501E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845DCE121BDB13C10070501E /* WhitworthBaseballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhitworthBaseballUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845DCE161BDB13C10070501E /* WhitworthBaseballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhitworthBaseballUITests.swift; sourceTree = "<group>"; };
+		845DCE181BDB13C10070501E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845DCDF01BDB13C00070501E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845DCE041BDB13C10070501E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845DCE0F1BDB13C10070501E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		845DCDEA1BDB13C00070501E = {
+			isa = PBXGroup;
+			children = (
+				845DCDF51BDB13C00070501E /* WhitworthBaseball */,
+				845DCE0A1BDB13C10070501E /* WhitworthBaseballTests */,
+				845DCE151BDB13C10070501E /* WhitworthBaseballUITests */,
+				845DCDF41BDB13C00070501E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		845DCDF41BDB13C00070501E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845DCDF31BDB13C00070501E /* WhitworthBaseball.app */,
+				845DCE071BDB13C10070501E /* WhitworthBaseballTests.xctest */,
+				845DCE121BDB13C10070501E /* WhitworthBaseballUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845DCDF51BDB13C00070501E /* WhitworthBaseball */ = {
+			isa = PBXGroup;
+			children = (
+				845DCDF61BDB13C00070501E /* AppDelegate.swift */,
+				845DCDF81BDB13C00070501E /* ViewController.swift */,
+				845DCDFA1BDB13C10070501E /* Main.storyboard */,
+				845DCDFD1BDB13C10070501E /* Assets.xcassets */,
+				845DCDFF1BDB13C10070501E /* LaunchScreen.storyboard */,
+				845DCE021BDB13C10070501E /* Info.plist */,
+			);
+			path = WhitworthBaseball;
+			sourceTree = "<group>";
+		};
+		845DCE0A1BDB13C10070501E /* WhitworthBaseballTests */ = {
+			isa = PBXGroup;
+			children = (
+				845DCE0B1BDB13C10070501E /* WhitworthBaseballTests.swift */,
+				845DCE0D1BDB13C10070501E /* Info.plist */,
+			);
+			path = WhitworthBaseballTests;
+			sourceTree = "<group>";
+		};
+		845DCE151BDB13C10070501E /* WhitworthBaseballUITests */ = {
+			isa = PBXGroup;
+			children = (
+				845DCE161BDB13C10070501E /* WhitworthBaseballUITests.swift */,
+				845DCE181BDB13C10070501E /* Info.plist */,
+			);
+			path = WhitworthBaseballUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845DCDF21BDB13C00070501E /* WhitworthBaseball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845DCE1B1BDB13C10070501E /* Build configuration list for PBXNativeTarget "WhitworthBaseball" */;
+			buildPhases = (
+				845DCDEF1BDB13C00070501E /* Sources */,
+				845DCDF01BDB13C00070501E /* Frameworks */,
+				845DCDF11BDB13C00070501E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhitworthBaseball;
+			productName = WhitworthBaseball;
+			productReference = 845DCDF31BDB13C00070501E /* WhitworthBaseball.app */;
+			productType = "com.apple.product-type.application";
+		};
+		845DCE061BDB13C10070501E /* WhitworthBaseballTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845DCE1E1BDB13C10070501E /* Build configuration list for PBXNativeTarget "WhitworthBaseballTests" */;
+			buildPhases = (
+				845DCE031BDB13C10070501E /* Sources */,
+				845DCE041BDB13C10070501E /* Frameworks */,
+				845DCE051BDB13C10070501E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845DCE091BDB13C10070501E /* PBXTargetDependency */,
+			);
+			name = WhitworthBaseballTests;
+			productName = WhitworthBaseballTests;
+			productReference = 845DCE071BDB13C10070501E /* WhitworthBaseballTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		845DCE111BDB13C10070501E /* WhitworthBaseballUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845DCE211BDB13C10070501E /* Build configuration list for PBXNativeTarget "WhitworthBaseballUITests" */;
+			buildPhases = (
+				845DCE0E1BDB13C10070501E /* Sources */,
+				845DCE0F1BDB13C10070501E /* Frameworks */,
+				845DCE101BDB13C10070501E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845DCE141BDB13C10070501E /* PBXTargetDependency */,
+			);
+			name = WhitworthBaseballUITests;
+			productName = WhitworthBaseballUITests;
+			productReference = 845DCE121BDB13C10070501E /* WhitworthBaseballUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845DCDEB1BDB13C00070501E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Zachary P Goold";
+				TargetAttributes = {
+					845DCDF21BDB13C00070501E = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					845DCE061BDB13C10070501E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 845DCDF21BDB13C00070501E;
+					};
+					845DCE111BDB13C10070501E = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 845DCDF21BDB13C00070501E;
+					};
+				};
+			};
+			buildConfigurationList = 845DCDEE1BDB13C00070501E /* Build configuration list for PBXProject "WhitworthBaseball" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845DCDEA1BDB13C00070501E;
+			productRefGroup = 845DCDF41BDB13C00070501E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845DCDF21BDB13C00070501E /* WhitworthBaseball */,
+				845DCE061BDB13C10070501E /* WhitworthBaseballTests */,
+				845DCE111BDB13C10070501E /* WhitworthBaseballUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845DCDF11BDB13C00070501E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845DCE011BDB13C10070501E /* LaunchScreen.storyboard in Resources */,
+				845DCDFE1BDB13C10070501E /* Assets.xcassets in Resources */,
+				845DCDFC1BDB13C10070501E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845DCE051BDB13C10070501E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845DCE101BDB13C10070501E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845DCDEF1BDB13C00070501E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845DCDF91BDB13C00070501E /* ViewController.swift in Sources */,
+				845DCDF71BDB13C00070501E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845DCE031BDB13C10070501E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845DCE0C1BDB13C10070501E /* WhitworthBaseballTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845DCE0E1BDB13C10070501E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845DCE171BDB13C10070501E /* WhitworthBaseballUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		845DCE091BDB13C10070501E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845DCDF21BDB13C00070501E /* WhitworthBaseball */;
+			targetProxy = 845DCE081BDB13C10070501E /* PBXContainerItemProxy */;
+		};
+		845DCE141BDB13C10070501E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845DCDF21BDB13C00070501E /* WhitworthBaseball */;
+			targetProxy = 845DCE131BDB13C10070501E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		845DCDFA1BDB13C10070501E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845DCDFB1BDB13C10070501E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		845DCDFF1BDB13C10070501E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845DCE001BDB13C10070501E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		845DCE191BDB13C10070501E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		845DCE1A1BDB13C10070501E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845DCE1C1BDB13C10070501E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WhitworthBaseball/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fantastic4.WhitworthBaseball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		845DCE1D1BDB13C10070501E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WhitworthBaseball/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fantastic4.WhitworthBaseball;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		845DCE1F1BDB13C10070501E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WhitworthBaseballTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fantastic4.WhitworthBaseballTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhitworthBaseball.app/WhitworthBaseball";
+			};
+			name = Debug;
+		};
+		845DCE201BDB13C10070501E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WhitworthBaseballTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fantastic4.WhitworthBaseballTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhitworthBaseball.app/WhitworthBaseball";
+			};
+			name = Release;
+		};
+		845DCE221BDB13C10070501E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WhitworthBaseballUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fantastic4.WhitworthBaseballUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WhitworthBaseball;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		845DCE231BDB13C10070501E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WhitworthBaseballUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Fantastic4.WhitworthBaseballUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WhitworthBaseball;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845DCDEE1BDB13C00070501E /* Build configuration list for PBXProject "WhitworthBaseball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845DCE191BDB13C10070501E /* Debug */,
+				845DCE1A1BDB13C10070501E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845DCE1B1BDB13C10070501E /* Build configuration list for PBXNativeTarget "WhitworthBaseball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845DCE1C1BDB13C10070501E /* Debug */,
+				845DCE1D1BDB13C10070501E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		845DCE1E1BDB13C10070501E /* Build configuration list for PBXNativeTarget "WhitworthBaseballTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845DCE1F1BDB13C10070501E /* Debug */,
+				845DCE201BDB13C10070501E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		845DCE211BDB13C10070501E /* Build configuration list for PBXNativeTarget "WhitworthBaseballUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845DCE221BDB13C10070501E /* Debug */,
+				845DCE231BDB13C10070501E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 845DCDEB1BDB13C00070501E /* Project object */;
+}
