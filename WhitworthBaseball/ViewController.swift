@@ -11,9 +11,8 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
  //Properties
     @IBOutlet weak var PickQuery: UIPickerView!
+    @IBOutlet weak var Test: UILabel!
     var user = 0
-    
-
     
     // Declaring a new array to hold choice and allow access to
     //outside functions
@@ -25,6 +24,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // connect data
         PickQuery.delegate = self
         PickQuery.dataSource = self
+        
 
     }
 
@@ -54,24 +54,42 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
       
     }
     
-    @IBAction func Submit(sender: AnyObject) {
+    //@IBAction func Submit(sender: AnyObject) {
+        //if (user == 0) {
+            //Result.text = "Correct"
+        //}
+        //else if (user == 1) {
+            //Result.text = "Correct"
+        //}
+        //else if (user == 2) {
+            //Result.text = "Correct"
+        //}
+        //else if (user == 3) {
+            //Result.text = "Correct"
+        //}
+        //else {
+            //Result.text = "Correct"
+      //  }
+
+    //}
+    
+    @IBAction func Button(sender: UIButton) {
         if (user == 0) {
-            //Result.text = "Correct"
-        }
-        else if (user == 1) {
-            //Result.text = "Correct"
-        }
-        else if (user == 2) {
-            //Result.text = "Correct"
-        }
-        else if (user == 3) {
-            //Result.text = "Correct"
-        }
-        else {
-            //Result.text = "Correct"
-        }
+            Test.text = "Correct1"
+            }
+            else if (user == 1) {
+            Test.text = "Correct2"
+            }
+            else if (user == 2) {
+            Test.text = "Correct3"
+            }
+            else if (user == 3) {
+            Test.text = "Correct4"
+            }
+            else {
+            Test.text = "Correct5"
+              }
 
     }
-    
 
 }
