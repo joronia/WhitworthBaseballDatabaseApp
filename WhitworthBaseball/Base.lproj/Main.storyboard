@@ -24,12 +24,20 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="zUK-D2-wfj"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsY-aQ-tZi">
+                                <rect key="frame" x="193" y="342" width="152" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1GQ-VQ-PQp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.031111900250000001" green="0.0053313061989999997" blue="0.0028258475509999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="PickQuery" destination="gI4-AY-CEw" id="fYW-ei-iYO"/>
+                        <outlet property="Submit" destination="gsY-aQ-tZi" id="eiS-L5-N2R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

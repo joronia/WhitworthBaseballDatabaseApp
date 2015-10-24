@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
  //Properties
     @IBOutlet weak var PickQuery: UIPickerView!
+    var user = 0
     
+
     
     // Declaring a new array to hold choice and allow access to
     //outside functions
@@ -47,11 +49,29 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     // Capture the picker view selection
-    //func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        user = row
       
-    //}
+    }
+    
+    @IBAction func Submit(sender: AnyObject) {
+        if (user == 0) {
+            //Result.text = "Correct"
+        }
+        else if (user == 1) {
+            //Result.text = "Correct"
+        }
+        else if (user == 2) {
+            //Result.text = "Correct"
+        }
+        else if (user == 3) {
+            //Result.text = "Correct"
+        }
+        else {
+            //Result.text = "Correct"
+        }
+
+    }
     
 
 }
-
