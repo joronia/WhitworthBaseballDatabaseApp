@@ -10,10 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
  //Properties
-   
     @IBOutlet weak var PickQuery: UIPickerView!
-    @IBOutlet weak var DisplayQuery: UITableView!
-    @IBOutlet weak var SubmitQuery: UIButton!
+    
     
     // Declaring a new array to hold choice and allow access to
     //outside functions

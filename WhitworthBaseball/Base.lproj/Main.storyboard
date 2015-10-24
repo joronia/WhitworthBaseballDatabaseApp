@@ -17,34 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53g-TJ-X9P" userLabel="SubmitQuery" customClass="SubmitQuery">
-                                <rect key="frame" x="269" y="499" width="108" height="30"/>
-                                <color key="backgroundColor" red="0.031111900250000001" green="0.0053313061989999997" blue="0.0028258475509999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="25"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" red="1" green="0.12036584658975269" blue="0.13599429775917116" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MYv-Dz-cao" userLabel="DisplayQuery">
-                                <rect key="frame" x="20" y="20" width="533" height="247"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-AY-CEw">
-                                <rect key="frame" x="35" y="275" width="545" height="204"/>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-AY-CEw">
+                                <rect key="frame" x="28" y="39" width="545" height="204"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="k6M-1Z-XGq"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9IK-59-nj5"/>
                                 </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.031111900250000001" green="0.0053313061989999997" blue="0.0028258475509999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gI4-AY-CEw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="nsA-dt-cb8"/>
+                            <constraint firstItem="gI4-AY-CEw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qsQ-uO-FQQ"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="DisplayQuery" destination="MYv-Dz-cao" id="ZPb-UC-JUb"/>
-                        <outlet property="PickQuery" destination="gI4-AY-CEw" id="rjS-HC-LDw"/>
-                        <outlet property="Submit" destination="53g-TJ-X9P" id="5Dd-Ql-NPJ"/>
-                        <outlet property="SubmitQuery" destination="53g-TJ-X9P" id="LyX-sE-fII"/>
+                        <outlet property="PickQuery" destination="gI4-AY-CEw" id="fYW-ei-iYO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
