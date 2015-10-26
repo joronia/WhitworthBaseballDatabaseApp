@@ -14,6 +14,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var Test: UILabel!
     var user = 0
     
+    
+    
     // Declaring a new array to hold choice and allow access to
     //outside functions
     var PickerData = ["Batting", "Pitching", "Fielding"]
@@ -73,22 +75,29 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     //}
     
+    
     @IBAction func Button(sender: UIButton) {
-        if (user == 0) {
-            Test.text = "Correct1"
-            }
-            else if (user == 1) {
-            Test.text = "Correct2"
-            }
-            else if (user == 2) {
-            Test.text = "Correct3"
-            }
-            else if (user == 3) {
-            Test.text = "Correct4"
-            }
-            else {
-            Test.text = "Correct5"
-              }
+        
+        let vc : WebViewController = self.storyboard!.instantiateViewControllerWithIdentifier("webVC") as! WebViewController;
+        var url = NSURL(string: "http://www.google.com")!;
+        vc.url = url;
+        self.navigationController?.pushViewController(vc, animated: true);
+        
+//        if (user == 0) {
+//            Test.text = "Correct1"
+//            }
+//            else if (user == 1) {
+//            Test.text = "Correct2"
+//            }
+//            else if (user == 2) {
+//            Test.text = "Correct3"
+//            }
+//            else if (user == 3) {
+//            Test.text = "Correct4"
+//            }
+//            else {
+//            Test.text = "Correct5"
+//              }
 
     }
 

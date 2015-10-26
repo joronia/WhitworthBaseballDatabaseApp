@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kx7-se-pj4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="9gq-G0-WHk">
+            <objects>
+                <navigationController id="kx7-se-pj4" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JsB-h3-irZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7Pq-Ga-koO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qqv-tw-eRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254" y="-249"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -14,18 +32,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-AY-CEw">
-                                <rect key="frame" x="28" y="39" width="545" height="204"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-AY-CEw">
+                                <rect key="frame" x="16" y="54" width="288" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="9IK-59-nj5"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="zUK-D2-wfj"/>
                                 </connections>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-7M-wyW">
+                                <rect key="frame" x="258" y="237" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq1-M7-uDi">
-                                <rect key="frame" x="237" y="299" width="127" height="30"/>
+                                <rect key="frame" x="135" y="485" width="127" height="30"/>
                                 <state key="normal" title="View Query">
                                     <color key="titleShadowColor" red="1" green="0.12036584660000001" blue="0.1359942978" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -33,16 +57,17 @@
                                     <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATY-dg-A0Z"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpJ-7M-wyW">
-                                <rect key="frame" x="279" y="251" width="85" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.57676373106060608" green="0.015476382201690212" blue="0.10262770620415547" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.031111900250000001" green="0.0053313061989999997" blue="0.0028258475509999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gI4-AY-CEw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="54" id="3Np-MB-nt9"/>
+                            <constraint firstItem="gI4-AY-CEw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="acm-Oh-utD"/>
+                            <constraint firstItem="gI4-AY-CEw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rrV-Pz-hos"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pFf-Si-Mvg"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="PickQuery" destination="gI4-AY-CEw" id="fYW-ei-iYO"/>
                         <outlet property="Test" destination="dpJ-7M-wyW" id="SM0-lh-LaY"/>
@@ -50,7 +75,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="380" y="305"/>
+            <point key="canvasLocation" x="328" y="423"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="7oF-j9-O2Z">
+            <objects>
+                <viewController storyboardIdentifier="webVC" id="HVl-sS-v1U" customClass="WebViewController" customModule="WhitworthBaseball" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7ue-qE-Oh4"/>
+                        <viewControllerLayoutGuide type="bottom" id="GVh-id-Enb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1qh-cf-Djv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ya-ZA-IMB">
+                                <rect key="frame" x="20" y="74" width="560" height="526"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Ya-ZA-IMB" firstAttribute="top" secondItem="7ue-qE-Oh4" secondAttribute="bottom" constant="54" id="6Yz-Ok-ZeT"/>
+                            <constraint firstItem="0Ya-ZA-IMB" firstAttribute="leading" secondItem="1qh-cf-Djv" secondAttribute="leadingMargin" id="CXu-VN-tXh"/>
+                            <constraint firstItem="GVh-id-Enb" firstAttribute="top" secondItem="0Ya-ZA-IMB" secondAttribute="bottom" id="aXN-xi-o3m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Ya-ZA-IMB" secondAttribute="trailing" id="yma-ad-tqP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="0Ya-ZA-IMB" id="BIq-Ii-h21"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ivb-oP-SnS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-289" y="1262"/>
         </scene>
     </scenes>
 </document>
