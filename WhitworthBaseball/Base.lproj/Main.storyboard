@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.57676373106060608" green="0.015476382201690212" blue="0.10262770620415547" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.031111900250000001" green="0.0053313061989999997" blue="0.0028258475509999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>

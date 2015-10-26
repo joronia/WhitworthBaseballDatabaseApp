@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // Declaring a new array to hold choice and allow access to
     //outside functions
-    var PickerData = ["Query 1", "Query 2", "Query 3", "Query 4", "Query 5"]
+    var PickerData = ["Batting", "Pitching", "Fielding"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
