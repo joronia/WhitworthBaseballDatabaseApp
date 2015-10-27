@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var PickQuery: UIPickerView!
     @IBOutlet weak var Test: UILabel!
     var user = 0
-
+    @IBOutlet weak var Stat: UIPickerView!
     @IBOutlet weak var PlayerSearch: UISearchBar!
     @IBOutlet weak var PlayerYear: UIPickerView!
     //@IBOutlet weak var ScrollContoller: UIScrollView!
@@ -23,6 +23,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //outside functions
     var PickerData = ["Batting", "Pitching", "Fielding"]
     var Year = ["All", "2000", "2001", "2002", "2003", "2004", "2005"]
+    var StatList = ["Bob", "Joey", "Bill"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         //ScrollContoller.contentSize.height = 1000
         PlayerYear.delegate = self
         PlayerYear.dataSource = self
+        Stat.delegate = self
+        Stat.dataSource = self
 
     }
     
@@ -55,8 +58,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView == PickQuery {
          return PickerData.count
-        } else {
+        } else if pickerView == PlayerYear{
             return Year.count
+        } else {
+            return StatList.count
         }
         
     }
@@ -65,9 +70,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if pickerView == PickQuery {
        return PickerData[row]
-        } else {
+        } else if pickerView == PlayerYear {
         return Year[row]
-        }
+        } else {
+        return StatList[row]
+    }
     }
     
     // Capture the picker view selection
