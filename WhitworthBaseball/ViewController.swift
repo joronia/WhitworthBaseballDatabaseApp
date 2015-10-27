@@ -13,12 +13,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var PickQuery: UIPickerView!
     @IBOutlet weak var Test: UILabel!
     var user = 0
-    
+
+    @IBOutlet weak var PlayerSearch: UISearchBar!
+    @IBOutlet weak var PlayerYear: UIPickerView!
+    @IBOutlet weak var ScrollContoller: UIScrollView!
     
     
     // Declaring a new array to hold choice and allow access to
     //outside functions
     var PickerData = ["Batting", "Pitching", "Fielding"]
+    var Year = ["All", "2000", "2001", "2002", "2003", "2004", "2005"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +30,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // connect data
         PickQuery.delegate = self
         PickQuery.dataSource = self
-        
+        ScrollContoller.contentSize.height = 1000
+        PlayerYear.delegate = self
+        PlayerYear.dataSource = self
 
     }
 
@@ -42,12 +48,21 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     //The number of rows of data
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return PickerData.count
+        if pickerView == PickQuery {
+         return PickerData.count
+        } else {
+            return Year.count
+        }
+        
     }
     
     //The data to return for the row and component (column) that's being passed in
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if pickerView == PickQuery {
        return PickerData[row]
+        } else {
+        return Year[row]
+        }
     }
     
     // Capture the picker view selection
@@ -55,6 +70,9 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         user = row
       
     }
+    
+    
+    
     
     //@IBAction func Submit(sender: AnyObject) {
         //if (user == 0) {
@@ -79,7 +97,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBAction func Button(sender: UIButton) {
         
         let vc : WebViewController = self.storyboard!.instantiateViewControllerWithIdentifier("webVC") as! WebViewController;
-        var url = NSURL(string: "http://www.google.com")!;
+        let url = NSURL(string: "http://www.google.com")!;
         vc.url = url;
         self.navigationController?.pushViewController(vc, animated: true);
         
