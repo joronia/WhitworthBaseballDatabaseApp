@@ -42,8 +42,29 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="zUK-D2-wfj"/>
                                 </connections>
                             </pickerView>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xkZ-Ac-9jz">
+                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zNv-cA-uxI"/>
+                                </connections>
+                            </searchBar>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9e-7z-C9U" userLabel="PlayerYear">
+                                <rect key="frame" x="20" y="296" width="288" height="101"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zx9-FX-Jro"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HJe-EY-1cG"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIz-6O-zT9">
+                                <rect key="frame" x="10" y="405" width="301" height="88"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8Ut-fT-ERc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="et0-V9-KvJ"/>
+                                </connections>
+                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq1-M7-uDi">
-                                <rect key="frame" x="20" y="493" width="280" height="61"/>
+                                <rect key="frame" x="20" y="501" width="280" height="61"/>
                                 <state key="normal" title="View Query">
                                     <color key="titleShadowColor" red="1" green="0.12036584660000001" blue="0.1359942978" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -51,24 +72,6 @@
                                     <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATY-dg-A0Z"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xkZ-Ac-9jz">
-                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9e-7z-C9U" userLabel="PlayerYear">
-                                <rect key="frame" x="20" y="306" width="288" height="101"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zx9-FX-Jro"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HJe-EY-1cG"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIz-6O-zT9">
-                                <rect key="frame" x="10" y="415" width="301" height="88"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="8Ut-fT-ERc"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="et0-V9-KvJ"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.57676373106060608" green="0.015476382201690212" blue="0.10262770620415547" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.031111900250000001" green="0.0053313061989999997" blue="0.0028258475509999998" alpha="1" colorSpace="calibratedRGB"/>
