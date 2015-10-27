@@ -21,7 +21,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     // Declaring a new array to hold choice and allow access to
     //outside functions
-    var PickerData = ["Batting", "Pitching", "Fielding"]
+    var PickerData = ["All", "Trent Alsin", "Corey Anderson", "Eric Anderson", "Mike Anderson", "Spencer Ansett", "Nick Ashley", "Tommy Banta", "Stephen Baranowski", "Chris Bartenhagen", "Ryan Beecroft", "Dan Belet", "Ryan Beliel", "Drew Belton", "Scott Biglin", "Peter Birdwell", "Scott Birdwell", "Carson Blumenthal", "Andrew Bower", "Mitch Boylan”, “Adam Briceland”, “Richard Brown", "Julian Burgess", "Scott Carr", "Dalton Carter", "Joel Clark", "Rich Clubine", "Mac Collette”, “Nick Combo”, “Cory Cooper", "Joel Condreay", "Kyle Courtney", "Michael Cozad", "Josh Davis", "Jeremy Druffel", "Matt Duffie", "Troy Duppenthaler", "Andrew Durant", "Brandon Ellendt", "Phil Entel", "Joel Evans", "Jordan Farkas", "Aaron Farr", "Chad Flett", "Brent Flyberg", "Dustin Frank”, “Tucker Freeman", "Nick Froman" ]
     var Year = ["All", "2000", "2001", "2002", "2003", "2004", "2005"]
     var StatList = ["Batting", "Pitching", "Fielding"]
     
