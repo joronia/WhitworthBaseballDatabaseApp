@@ -35,6 +35,11 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         PlayerYear.dataSource = self
 
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        return
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

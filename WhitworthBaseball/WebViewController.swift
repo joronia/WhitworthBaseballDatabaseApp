@@ -20,6 +20,10 @@ class WebViewController: UIViewController {
         let request = NSURLRequest(URL: url);
         self.webView.loadRequest(request);
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -105,9 +105,8 @@
                     <connections>
                         <outlet property="PickQuery" destination="gI4-AY-CEw" id="fYW-ei-iYO"/>
                         <outlet property="PlayerSearch" destination="xkZ-Ac-9jz" id="1HA-9G-aGu"/>
-                        <outlet property="PlayerYear" destination="b9e-7z-C9U" id="3j3-7l-iHe"/>
+                        <outlet property="PlayerYear" destination="b9e-7z-C9U" id="OVa-qa-avW"/>
                         <outlet property="ScrollContoller" destination="h3D-uk-zRg" id="tav-aT-ZUV"/>
-                        <outlet property="Year" destination="b9e-7z-C9U" id="Neu-BS-zFc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
