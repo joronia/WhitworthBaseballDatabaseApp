@@ -16,7 +16,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
 
     @IBOutlet weak var PlayerSearch: UISearchBar!
     @IBOutlet weak var PlayerYear: UIPickerView!
-    @IBOutlet weak var ScrollContoller: UIScrollView!
+    //@IBOutlet weak var ScrollContoller: UIScrollView!
     
     
     // Declaring a new array to hold choice and allow access to
@@ -30,7 +30,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         // connect data
         PickQuery.delegate = self
         PickQuery.dataSource = self
-        ScrollContoller.contentSize.height = 1000
+        //ScrollContoller.contentSize.height = 1000
         PlayerYear.delegate = self
         PlayerYear.dataSource = self
 
