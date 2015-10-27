@@ -35,14 +35,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-AY-CEw" userLabel="PickerPlayer">
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-AY-CEw" userLabel="PickerPlayer">
                                 <rect key="frame" x="20" y="94" width="288" height="216"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="9IK-59-nj5"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="zUK-D2-wfj"/>
                                 </connections>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq1-M7-uDi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mq1-M7-uDi">
                                 <rect key="frame" x="20" y="493" width="280" height="61"/>
                                 <state key="normal" title="View Query">
                                     <color key="titleShadowColor" red="1" green="0.12036584660000001" blue="0.1359942978" alpha="1" colorSpace="calibratedRGB"/>
@@ -51,18 +51,18 @@
                                     <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ATY-dg-A0Z"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xkZ-Ac-9jz">
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xkZ-Ac-9jz">
                                 <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9e-7z-C9U" userLabel="PlayerYear">
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b9e-7z-C9U" userLabel="PlayerYear">
                                 <rect key="frame" x="20" y="306" width="288" height="101"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="zx9-FX-Jro"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="HJe-EY-1cG"/>
                                 </connections>
                             </pickerView>
-                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIz-6O-zT9">
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HIz-6O-zT9">
                                 <rect key="frame" x="10" y="415" width="301" height="88"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="8Ut-fT-ERc"/>
@@ -72,29 +72,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.57676373106060608" green="0.015476382201690212" blue="0.10262770620415547" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.031111900250000001" green="0.0053313061989999997" blue="0.0028258475509999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="37m-9V-fY8"/>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="54" id="3Np-MB-nt9"/>
-                            <constraint firstItem="mq1-M7-uDi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="3m1-R1-TY8"/>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Kt-fb-TDx"/>
-                            <constraint firstItem="xkZ-Ac-9jz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BGR-ni-8r4"/>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I3u-dq-QML"/>
-                            <constraint firstItem="b9e-7z-C9U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NBN-bO-Dv6"/>
-                            <constraint firstItem="mq1-M7-uDi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NVc-Z2-jlD"/>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P0C-zI-1TL"/>
-                            <constraint firstItem="xkZ-Ac-9jz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="VSl-ov-kgW"/>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="acm-Oh-utD"/>
-                            <constraint firstItem="xkZ-Ac-9jz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ayZ-az-jBo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HIz-6O-zT9" secondAttribute="trailing" id="eBB-bI-F7p"/>
-                            <constraint firstItem="mq1-M7-uDi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fsx-3V-JNz"/>
-                            <constraint firstItem="gI4-AY-CEw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hPE-QE-R2R"/>
-                            <constraint firstItem="b9e-7z-C9U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hqB-ij-9l1"/>
-                            <constraint firstItem="HIz-6O-zT9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jRe-i7-3pB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="b9e-7z-C9U" secondAttribute="trailing" id="l5N-6E-qQc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xkZ-Ac-9jz" secondAttribute="trailing" id="qaO-I3-PhZ"/>
-                            <constraint firstItem="mq1-M7-uDi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vhe-SW-1zz"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mq1-M7-uDi" secondAttribute="bottom" constant="20" id="yYP-Hr-EqX"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pFf-Si-Mvg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
