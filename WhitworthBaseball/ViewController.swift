@@ -23,7 +23,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     //outside functions
     var PickerData = ["Batting", "Pitching", "Fielding"]
     var Year = ["All", "2000", "2001", "2002", "2003", "2004", "2005"]
-    var StatList = ["Bob", "Joey", "Bill"]
+    var StatList = ["Batting", "Pitching", "Fielding"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
