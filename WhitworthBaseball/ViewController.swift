@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     @IBOutlet weak var PlayerSearch: UISearchBar!
     @IBOutlet weak var PlayerYear: UIPickerView!
     var playerSelection = "All";
+    var FullName = "";
     var yearSelection = "All";
     var statSelection = "Batting";
     
@@ -89,6 +90,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         NSLog(str!)
         if pickerView == PickQuery {
             playerSelection = str!
+            FullName = playerSelection.stringByReplacingOccurrencesOfString(" ", withString: "")
             
         } else if pickerView == PlayerYear {
             yearSelection = str!
@@ -100,15 +102,29 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func Button(sender: UIButton) {
         
-        let vc : WebViewController = self.storyboard!.instantiateViewControllerWithIdentifier("webVC") as! WebViewController;
-       // var surl = "http://cs1/Baseball/runSQLODBC.php"
+     
        // surl=surl.appendContentsOf("?year=2014");
-       let url = NSURL(string: "http://cs1/Baseball/runSQLODBC.php")!;
-        vc.url = url;
-         self.navigationController?.pushViewController(vc, animated: true);
+       //let url = NSURL(string: "http://cs1/Baseball/runSQLODBC.php")!;
+
+        let myUrl = NSURL(string: "http://cs1/Baseball/runSQLODBC.php")
+        let request = NSMutableURLRequest(URL:myUrl!)
+        request.HTTPMethod="POST"
         
+        let postString = "name=FullName&year=yearSelection&type=statSelection"
         
+        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
         
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request){
+            data, response, error in
+            
+            if error != nil{
+                print("error=\(error)")
+                return
+            }
+        }
+        let vc : WebViewController = self.storyboard!.instantiateViewControllerWithIdentifier("webVC") as! WebViewController;
+        vc.url = myUrl;
+        self.navigationController?.pushViewController(vc, animated: true);
         
     }
     
