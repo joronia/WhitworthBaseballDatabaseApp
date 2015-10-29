@@ -105,25 +105,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
      
        // surl=surl.appendContentsOf("?year=2014");
        //let url = NSURL(string: "http://cs1/Baseball/runSQLODBC.php")!;
-
-        let myUrl = NSURL(string: "http://cs1/Baseball/runSQLODBC.php")
-        let request = NSMutableURLRequest(URL:myUrl!)
-        request.HTTPMethod="POST"
+       
+       let vc : WebViewController = self.storyboard!.instantiateViewControllerWithIdentifier("webVC") as! WebViewController;
         
-        let postString = "name=FullName&year=yearSelection&type=statSelection"
-        
-        request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
-        
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request){
-            data, response, error in
-            
-            if error != nil{
-                print("error=\(error)")
-                return
-            }
+        if (statSelection == "Batting") {
+            let myUrl = NSURL(string: "http://cs1/Baseball/runSQLODBCBat.php?"+"name="+FullName+"&year="+yearSelection)
+            vc.url = myUrl;
+        } else if (statSelection == "Pitching"){
+            let myUrl = NSURL(string: "http://cs1/Baseball/runSQLODBCPitch.php?"+"name="+FullName+"&year="+yearSelection)
+            vc.url = myUrl;
+        } else{
+            let myUrl = NSURL(string: "http://cs1/Baseball/runSQLODBCField.php?"+"name="+FullName+"&year="+yearSelection)
+            vc.url = myUrl;
         }
-        let vc : WebViewController = self.storyboard!.instantiateViewControllerWithIdentifier("webVC") as! WebViewController;
-        vc.url = myUrl;
+    
         self.navigationController?.pushViewController(vc, animated: true);
         
     }
